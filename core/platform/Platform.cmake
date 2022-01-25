@@ -2,6 +2,10 @@
 # file and assign the file's path to LF_PLATFORM_FILE
 if(${CMAKE_SYSTEM_NAME} STREQUAL "Linux")
     set(LF_PLATFORM_FILE lf_linux_support.c)
+elseif(${CMAKE_SYSTEM_NAME} STREQUAL "FreeRTOS")
+    set(LF_PLATFORM_FILE lf_freertos_support.c)
+    include(${CMAKE_CURRENT_LIST_DIR}/FreeRTOS/FreeRTOS.cmake)
+    message("Compiling for FreeRTOS platform")
 elseif(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
     set(LF_PLATFORM_FILE lf_macos_support.c)
 elseif(${CMAKE_SYSTEM_NAME} STREQUAL "Windows")
