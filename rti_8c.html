@@ -85,7 +85,7 @@ $(function() {
 <code>#include &lt;assert.h&gt;</code><br />
 <code>#include &lt;sys/wait.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="platform_8h_source.html">platform.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="util_8c.html">util.c</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="core_2utils_2util_8c.html">utils/util.c</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="net__util_8c.html">net_util.c</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="net__common_8h_source.html">net_common.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="tag_8c.html">tag.c</a>&quot;</code><br />
@@ -338,7 +338,7 @@ DESCRIPTION</h1>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Handle address advertisement messages (</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="net__common_8h.html#ae004cb4e5add42afe5483f6706e11d35">MSG_TYPE_ADDRESS_ADVERTISEMENT</a> in <a class="el" href="net__common_8h.html">net_common.h</a>). The federate is expected to send its server port number as the <a class="el" href="reactor_8c.html#a4311a28891c362d4d0dd4f748beba33b">next</a> byte. The RTI will keep a record of this number in the .server_port field of the _RTI.federates[federate_id] array of structs.</dd></dl>
+<p >Handle address advertisement messages (</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="net__common_8h.html#ae004cb4e5add42afe5483f6706e11d35">MSG_TYPE_ADDRESS_ADVERTISEMENT</a> in <a class="el" href="net__common_8h.html">net_common.h</a>). The federate is expected to send its server port number as the <a class="el" href="reactor_8c.html#a6967cbc8a4ce78b1049da429d172f90b">next</a> byte. The RTI will keep a record of this number in the .server_port field of the _RTI.federates[federate_id] array of structs.</dd></dl>
 <p>The server_hostname and server_ip_addr fields are assigned in <a class="el" href="rti_8c.html#acf8907ccab075522f7b84de579d50030">connect_to_federates()</a> upon accepting the socket from the remote federate.</p>
 <p >This function assumes the caller does not hold the mutex.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1316,8 +1316,8 @@ DESCRIPTION</h1>
 <div class="line">    .clock_sync_exchanges_per_interval = 10</div>
 <div class="line">}</div>
 <div class="ttc" id="arti_8h_html_a9705d612b9ce908ee485e92eb3f2769faf21c0b4c30338f2717ebc9f53fa34558"><div class="ttname"><a href="rti_8h.html#a9705d612b9ce908ee485e92eb3f2769faf21c0b4c30338f2717ebc9f53fa34558">clock_sync_init</a></div><div class="ttdeci">@ clock_sync_init</div><div class="ttdef"><b>Definition:</b> rti.h:105</div></div>
-<div class="ttc" id="atag_8h_html_a673a8ebab8ec621a1cf731871dd170c8"><div class="ttname"><a href="tag_8h.html#a673a8ebab8ec621a1cf731871dd170c8">MSEC</a></div><div class="ttdeci">#define MSEC(t)</div><div class="ttdef"><b>Definition:</b> tag.h:44</div></div>
-<div class="ttc" id="atag_8h_html_afc2f39e1818a6a8b68ca46e7c9dc2704"><div class="ttname"><a href="tag_8h.html#afc2f39e1818a6a8b68ca46e7c9dc2704">NEVER_TAG</a></div><div class="ttdeci">#define NEVER_TAG</div><div class="ttdef"><b>Definition:</b> tag.h:63</div></div>
+<div class="ttc" id="atag_8h_html_a673a8ebab8ec621a1cf731871dd170c8"><div class="ttname"><a href="tag_8h.html#a673a8ebab8ec621a1cf731871dd170c8">MSEC</a></div><div class="ttdeci">#define MSEC(t)</div><div class="ttdef"><b>Definition:</b> tag.h:45</div></div>
+<div class="ttc" id="atag_8h_html_afc2f39e1818a6a8b68ca46e7c9dc2704"><div class="ttname"><a href="tag_8h.html#afc2f39e1818a6a8b68ca46e7c9dc2704">NEVER_TAG</a></div><div class="ttdeci">#define NEVER_TAG</div><div class="ttdef"><b>Definition:</b> tag.h:64</div></div>
 </div><!-- fragment --><p >The state of this RTI instance. </p>
 
 </div>
